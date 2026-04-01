@@ -1,0 +1,137 @@
+.app {
+  background: rgb(0, 0, 0);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.subtitle{
+  font-size: 18px;
+  margin-left: 30px;
+  color: white;
+}
+
+.title {
+  font-size: 36px;
+  margin-left: 20px;
+  margin-top: 30px;
+  color: rgb(255, 255, 255);
+}
+
+.dateButton{
+  background: rgb(71, 71, 71);
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  cursor: pointer;
+
+}
+
+.phone {
+  width: 100%;
+  max-width: 430px; 
+  height: 100vh;
+  background: #2d2d2d;
+  padding: 12px;
+  box-shadow: 0 0 40px rgba(0,0,0,0.6);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.controls button {
+  margin-left: 6px;
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.table {
+  display: flex;
+  gap: 2px;
+  min-width: max-content;
+}
+
+.daysColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.day {
+  width: 60px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #222;
+  font-weight: bold;
+  padding: 4px 2px;
+  text-align: center;
+  gap: 4px;
+}
+
+.day small {
+  font-size: 10px;
+  opacity: 0.7;
+}
+
+.lessonColumns {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.row {
+  display: flex;
+  gap: 2px;
+}
+
+.lessonHeader {
+  background: #009dff;
+  text-align: center;
+  font-size: 10px;
+  padding: 4px;
+  width: 80px; 
+  flex-shrink: 0;
+}
+
+.cell {
+  height: 98px; 
+  width: 88px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+  flex-shrink: 0;
+}
+
+.cell:hover {
+  opacity: 0.8;
+}
+
+.cell small {
+  font-size: 9px;
+  opacity: 0.7;
+}
